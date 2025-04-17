@@ -1,16 +1,37 @@
-# covid_app
+# 🦠 Covid Tracker App
 
-A new Flutter project.
+A Flutter app that tracks and displays real-time COVID-19 data for countries around the world.
 
-## Getting Started
+## 🔍 Overview
 
-This project is a starting point for a Flutter application.
+This app allows users to view COVID-19 statistics country-wise in a clean and user-friendly interface. It fetches up-to-date data from a public API and presents total cases, recoveries, and deaths in an organized format.
 
-A few resources to get you started if this is your first Flutter project:
+Built using **Flutter** and **Dart**, this app showcases beautiful UI design along with smooth performance across Android and iOS platforms.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🌟 Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 🌍 Country-wise COVID-19 data
+- 🔄 Real-time data fetching via API
+- 📊 Visual display of total cases, deaths, and recoveries
+- 🔍 Search functionality to filter countries *(optional)*
+
+## 🚀 Getting Started
+
+## 📸 Screenshots
+
+![Covid-app](https://github.com/user-attachments/assets/8f4b9174-9402-41fb-920b-e211eb0bf7b3)
+
+
+### Prerequisites
+
+- Flutter SDK installed
+- Dart environment
+- Android Studio / VS Code
+
+### Installation Steps
+
+```bash
+git clone https://github.com/azanarib/Flutter-Covid-Tracker-App.git
+cd Flutter-Covid-Tracker-App
+flutter pub get
+flutter run
