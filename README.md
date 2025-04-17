@@ -19,7 +19,7 @@ Built using **Flutter** and **Dart**, this app showcases beautiful UI design alo
 
 ## 📸 Screenshots
 
-https://github.com/azanarib/Flutter-Covid-Tracker-App/blob/master/Covid-app.png?raw=true
+https://github.com/azanarib/Flutter-Covid-Tracker-App/blob/a76dfe3b4d00333d222edac2840db2ea1303f01c/Covid-app.png
 
 ### Prerequisites
 
