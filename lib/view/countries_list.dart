@@ -12,6 +12,7 @@ class CountriesListScreen extends StatefulWidget {
 
 class _CountriesListScreenState extends State<CountriesListScreen> {
   TextEditingController searchController = TextEditingController();
+  FocusNode? focusNode = FocusNode();
   @override
   Widget build(BuildContext context) {
     StatesServices statesServices = StatesServices();
@@ -26,6 +27,7 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextFormField(
+                focusNode: focusNode,
                 onChanged: (value) {
                   setState(() {});
                 },
@@ -51,6 +53,7 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
                           context,
                           index,
                         ) {
+                          /* If the data is not comming from the server cause any internet issue then Shimmer efferct will be display. */
                           return Shimmer.fromColors(
                             baseColor: Colors.grey.shade700,
                             highlightColor: Colors.grey.shade100,
@@ -63,7 +66,7 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
                                     color: Colors.white,
                                   ),
                                   title: Container(
-                                    height: 10,
+                                    height: 20,
                                     width: 50,
                                     color: Colors.white,
                                   ),
@@ -82,6 +85,8 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
                             children: [
                               InkWell(
                                 onTap: () {
+                                  setState(() {});
+                                  FocusScope.of(context).unfocus();
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
@@ -126,6 +131,8 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
                             children: [
                               InkWell(
                                 onTap: () {
+                                  setState(() {});
+                                  FocusScope.of(context).unfocus();
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(

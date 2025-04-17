@@ -30,6 +30,7 @@ class _WorldStateScreenState extends State<WorldStateScreen>
   ];
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
     StatesServices statesServices = StatesServices();
     return Scaffold(
       body: SafeArea(
@@ -40,7 +41,7 @@ class _WorldStateScreenState extends State<WorldStateScreen>
             right: 15,
             left: 15,
           ),
-          child: Column(
+          child: ListView(
             children: [
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.05,
@@ -49,11 +50,14 @@ class _WorldStateScreenState extends State<WorldStateScreen>
                 future: statesServices.fetchWorldStatesRecords(),
                 builder: (context, snapshot) {
                   if (!snapshot.hasData) {
-                    return Expanded(
-                      child: SpinKitFadingCircle(
-                        color: Colors.white,
-                        size: 50,
-                        controller: _controller,
+                    return SizedBox(
+                      height: height * 0.8,
+                      child: Center(
+                        child: SpinKitFadingCircle(
+                          color: Colors.white,
+                          size: 50,
+                          controller: _controller,
+                        ),
                       ),
                     );
                   } else {

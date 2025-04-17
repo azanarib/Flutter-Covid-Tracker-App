@@ -18,14 +18,12 @@ class _SplashScreenState extends State<SplashScreen>
   )..repeat();
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     _controller.dispose();
   }
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     Timer(Duration(seconds: 5), () {
       Navigator.push(
@@ -48,7 +46,7 @@ class _SplashScreenState extends State<SplashScreen>
             AnimatedBuilder(
               animation: _controller,
               child: Center(
-                child: Container(
+                child: SizedBox(
                   height: 250,
                   width: 250,
                   child: Center(
