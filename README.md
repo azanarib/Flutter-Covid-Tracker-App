@@ -27,6 +27,6 @@ Built using **Flutter** and **Dart**, this app showcases beautiful UI design alo
 
 ```bash
 git clone https://github.com/azanarib/Flutter-Covid-Tracker-App.git
-cd covid-tracker-flutter
+cd Flutter-Covid-Tracker-App
 flutter pub get
 flutter run
