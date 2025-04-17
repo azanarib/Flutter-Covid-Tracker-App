@@ -13,7 +13,6 @@ Built using **Flutter** and **Dart**, this app showcases beautiful UI design alo
 - 🌍 Country-wise COVID-19 data
 - 🔄 Real-time data fetching via API
 - 📊 Visual display of total cases, deaths, and recoveries
-- 🌙 Light & Dark mode support *(optional)*
 - 🔍 Search functionality to filter countries *(optional)*
 
 ## 🚀 Getting Started
@@ -27,7 +26,7 @@ Built using **Flutter** and **Dart**, this app showcases beautiful UI design alo
 ### Installation Steps
 
 ```bash
-git clone https://github.com/your-username/covid-tracker-flutter.git
+git clone https://github.com/azanarib/Flutter-Covid-Tracker-App.git
 cd covid-tracker-flutter
 flutter pub get
 flutter run
