@@ -6,7 +6,7 @@ A Flutter app that tracks and displays real-time COVID-19 data for countries aro
 
 This app allows users to view COVID-19 statistics country-wise in a clean and user-friendly interface. It fetches up-to-date data from a public API and presents total cases, recoveries, and deaths in an organized format.
 
-Built using **Flutter** and **Dart**, this app showcases beautiful UI design along with smooth performance across Android and iOS platforms.
+Built using **Flutter** and **Dart**, this app showcases beautiful UI design along with smooth performance across Android platforms.
 
 ## 🌟 Features
 
